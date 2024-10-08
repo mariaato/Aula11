@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Funcionario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-register mx-auto col-8 px-0">
+            <div class="card-header bg-primary">Cadastro de Funcionario</div>
+            <div class="card-body">
+                <form action="cadastro_funcionario.php" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label for="Nome">Nome completo</label>
+                                <input type="text" name="nome" class="form-control" placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="col-12">
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" class="form-control" placeholder="Digite CPF">
+                            </div>
+                            <div class="col-12">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" name="endereco" class="form-control" placeholder="Digite seu endereço">
+                            </div>
+                            <div class="col-6">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" class="form-control" placeholder="Digite sua cidade">
+                            </div>
+                            <div class="col-6">
+                                <label for="estado">Estado</label>
+                                <select name="estado" class="form-control">
+                                    <option value="">Selecione um estado</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="PR">Parana</option>
+                                    <option value="SP">Sao Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" name="telefone" class="form-control" placeholder="Digite seu telefone">
+                            </div>
+                            <div class="col-12">
+                                <label for="" class="text-primary font-weight-bold pt-3">-Escolaridade</label>
+                            </div>
+                            <div class="col-12">
+                                <label for="formacao">Formação</label>
+                                <input type="text" name="formacao" class="form-control" placeholder="Digite sua formação">
+                            </div>
+                            <div class="col-6">
+                                <label for="nivelEscolar">Nivel Escolar</label>
+                                <select name="nivelEscolar" class="form-control">
+                                    <option value="">Selecione</option>
+                                    <option value="EnsFundamental">Ens Fundamental</option>
+                                    <option value="EnsMedio">Ens Medio</option>
+                                    <option value="CursoSuperiorIncompleto">Curso Superior Incompleto</option>
+                                    <option value="CursoSuperiorCompleto">Curso Superior Completo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Cadastrar</button>
+                    <div class="text-center">
+                        <a href="index.html" class="d-block mt-3">Página inicial</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>       
+</body>
+</html>
